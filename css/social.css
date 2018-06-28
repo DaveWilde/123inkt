@@ -1,0 +1,54 @@
+.social {
+	padding: 10rem 0 19rem;
+	background-image: url(../images/bgimage.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.social__intro {
+	text-align: center;
+}
+
+.social__intro h2 {
+	color: #789199;
+	margin-bottom: 1rem;
+}
+
+.social__boxes {
+	padding-top: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social__box {
+	width: 300px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.social__box__image {
+	width: 300px;
+	height: 300px;
+	background-size: 100%;
+	background-position: center;
+	transition: 0.3s;
+}
+
+.social__box:hover .social__box__image {
+	background-size: 110%;
+} 
+
+.social__box__text {
+	padding: 15px;
+	color: #76797F;
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+	.social__box {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

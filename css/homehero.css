@@ -1,0 +1,138 @@
+.homehero, .homehero__slide {
+	position: relative;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin-top: 5.5rem;
+	height: 4rem;
+	width: 4rem;
+	overflow: hidden;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.slick-prev {
+	margin-left: -11.5rem;
+}
+
+.slick-next {
+	margin-left: 11.5rem;
+}
+
+.homehero__image {
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+
+.homehero__image:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 );
+}
+
+.homehero__text {
+	position: absolute;
+	top: 50%;left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+.homehero__title {
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0 0 4rem;
+}
+
+.homehero__nav {
+	width: 270px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.homehero__nav .icon {
+	line-height: 40px;
+}
+
+.homehero__godown {
+	position: absolute;
+	bottom: 2rem;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.homehero__godown {
+	cursor: pointer;
+}
+
+.homehero__godown .icon {
+	font-size: 3.4rem;
+	line-height: 5.5rem;
+	transition: 0.3s; 
+}
+
+.homehero__godown:hover .icon {
+	color: #FD5454;
+}
+
+.homehero__godown .icon-arrow_down_touch {
+	display: none;
+}
+
+.homehero__godown .icon-arrow_down {
+	display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.homehero__godown:hover .icon-arrow_down {
+	animation-name: bounce;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(5px);}
+    100% {transform: translateY(0);}
+}
+
+@media only screen and (max-width: 800px) {
+	.homehero__godown .icon-mouse,
+	.homehero__godown .icon-arrow_down {
+		display: none;
+	}
+
+	.homehero__godown .icon-arrow_down_touch {
+		display: block;
+		font-size: 17px;
+		line-height: 43px;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+	.homehero__title {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.homehero__image {
+		height: 500px;
+	}
+}

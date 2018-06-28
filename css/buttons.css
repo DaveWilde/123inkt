@@ -1,0 +1,37 @@
+.button {
+	display: inline-block;
+	border-radius: 40px;
+	height: 40px;
+	width: 40px;
+	line-height: 39px;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 15px;
+}
+
+.button--black {
+	background-color: #000;
+	color: #fff;
+}
+
+.button--black:hover, .button--black.hover {
+	background-color: #FD5454;
+}
+
+.button--white {
+	background-color: #fff;
+	width: 5.4rem;
+	height: 5.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.button--white {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.button--big {
+	width: 150px;
+}

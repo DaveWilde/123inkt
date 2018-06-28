@@ -1,0 +1,19 @@
+.content {
+	padding: 10rem 0;
+	text-align: center;
+}
+
+.content p {
+	font-size: 2.4rem;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+	.content {
+		padding: 8rem 0;
+	}
+
+	.content p {
+		font-size: 2rem;
+	}
+}
