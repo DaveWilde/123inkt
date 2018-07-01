@@ -37,6 +37,14 @@
 	background-color: #fff;
 	transform: rotate(-45deg);
 	transform-origin: center;
+	animation-name: logo_rotation;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+@keyframes logo_rotation {
+    0% {transform: rotate(-45deg);}
+    100% {transform: rotate(315deg);}
 }
 
 .m-nav__menu {
@@ -95,7 +103,6 @@
 		background-color: #000;
 		border-top: 0.2rem solid #fff;
 		padding: 40px;
-		/* display: none; */
 		opacity: 0;
 		transform: translateY(calc(-100% - 60px));
 		transition: 0.5s;
@@ -103,7 +110,6 @@
 	}
 
 	.m-nav.open .m-nav__links {
-		/* display: block; */
 		transform: translateY(0);
 		opacity: 1;
 	}
