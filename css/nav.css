@@ -32,10 +32,10 @@
 
 .m-nav__logo {
 	display: inline-block;
-	width: 3.6rem;
-	height: 1rem;
-	background-color: #fff;
-	transform: rotate(-45deg);
+    width: 10.9rem;
+    height: 5.3rem;
+    background: url(../images/logo.png);
+    background-size: cover;
 	transform-origin: center;
 	animation-name: logo_rotation;
 	animation-duration: 1s;
@@ -43,15 +43,15 @@
 }
 
 @keyframes logo_rotation {
-    0% {transform: rotate(-45deg);}
-    100% {transform: rotate(315deg);}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 .m-nav__menu {
 	display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	.l-wrap {
 		padding: 0 10px;
 	}
@@ -91,7 +91,7 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+		transform: translateX(-50%) translateY(-50%);
 	}
 
 	.m-nav__links {

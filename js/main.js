@@ -25,3 +25,13 @@ $('.m-nav__menu').click(function() {
 		$('.m-nav').addClass('open');
 	}
 });
+
+$('.product__selection-choice a').click(function(){
+	var price = $(this).attr('data-price');
+	var amount = $(this).attr('data-amount');
+	$('.product__selection-choice a').removeClass('selected');
+	$(this).addClass('selected');
+	$('.product__pay input[type="button"]').removeAttr('disabled');
+	$('.product__price').text(price);
+	$('.amount').text(amount);
+});
